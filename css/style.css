@@ -1,0 +1,295 @@
+body,
+html,
+main,
+aside,
+nav,
+header,
+footer,
+article,
+section,
+figure,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+hgroup,
+svg,
+img,
+label,
+input,
+form,
+button,
+span,
+p,
+strong,
+ul,
+li,
+ol,
+i {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  font-weight: normal;
+  border: 0;
+  outline: 0;
+}
+body {
+  font-size: 16px;
+}
+.availability {
+  padding-bottom: 115px;
+  font-family: 'Montserrat';
+  background-color: #fcfcfc;
+}
+.availability .container {
+  position: relative;
+  padding-top: 165px;
+}
+.availability .feature {
+  position: absolute;
+  right: -128px;
+  bottom: -115px;
+}
+.availability .info {
+  position: relative;
+  z-index: 10;
+}
+.availability .info .subtitle {
+  text-transform: uppercase;
+}
+.availability .info h2 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background: linear-gradient(45deg, #32325d 10%, #ea0452 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  image-rendering: -webkit-optimize-contrast;
+}
+.availability .info > p {
+  line-height: 25px;
+}
+.availability .info .price-data {
+  max-width: 500px;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: #F2F2F4;
+}
+.availability .info .price-data .price-info {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-left: 75px;
+}
+.availability .info .price-data .price-info p {
+  padding: 10px 0;
+}
+.availability .info .price-data .price-info p.closed {
+  position: relative;
+  text-decoration: line-through;
+}
+.availability .info .price-data .price-info p.closed::before {
+  content: url(../img/Price.png);
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  width: 18px;
+  height: 18px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.availability .info .price-data .price {
+  display: inline-block;
+  margin-left: 15px;
+}
+.availability .info .price-data .price span {
+  display: block;
+  padding: 10px 0;
+  font-weight: bold;
+  color: #ea0452;
+}
+.availability .info .price-warning {
+  position: relative;
+  text-transform: uppercase;
+  padding: 20px 0;
+  padding-left: 75px;
+}
+.availability .info .price-warning::before {
+  content: url(../img/Clock.png);
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  width: 18px;
+  height: 18px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.availability .info .time-box {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 25px 30px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+.availability .info .time-box:last-child {
+  margin-right: 0;
+}
+.availability .info .time-box span {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+}
+.availability .info .time-box .count {
+  font-size: 50px;
+  font-weight: 300;
+  background: linear-gradient(135deg, #32325d 10%, #ea0452 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  image-rendering: -webkit-optimize-contrast;
+}
+.availability .info .btn-pink {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  margin-top: 70px;
+  padding: 25px 65px;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ea0452;
+}
+.availability .info .btn-pink::before {
+  content: '\25ba';
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  font-size: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1200px) {
+  .availability {
+    padding-bottom: 60px;
+  }
+  .availability .feature {
+    right: -60px;
+    bottom: -60px;
+    width: 500px;
+  }
+}
+@media (max-width: 992px) {
+  .availability .feature {
+    display: none;
+  }
+  .availability .info .subtitle {
+    text-align: center;
+  }
+  .availability .info h2 {
+    font-size: 34px;
+    text-align: center;
+  }
+  .availability .info > p {
+    text-align: center;
+  }
+  .availability .info .price-data {
+    margin: 20px auto;
+  }
+  .availability .info .price-warning {
+    text-align: left;
+    margin-left: 14%;
+  }
+  .availability .info .time-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .availability .info .btn-pink {
+    margin: 50px auto;
+  }
+}
+@media (max-width: 576px) {
+  .availability {
+    padding-bottom: 20px;
+  }
+  .availability .container {
+    padding-top: 50px;
+  }
+  .availability .info h2 {
+    font-size: 28px;
+  }
+  .availability .info .price-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .availability .info .price-data .price-info {
+    padding-left: 40px;
+  }
+  .availability .info .price-data .price-info p.closed::before {
+    left: -30px;
+  }
+  .availability .info .price-data .price span {
+    width: 65px;
+    padding: 20px 0;
+  }
+  .availability .info .price-warning {
+    margin-left: 12%;
+    padding: 20px 0;
+  }
+  .availability .info .price-warning::before {
+    left: -30px;
+  }
+  .availability .info .time-box {
+    padding: 10px 15px;
+  }
+  .availability .info .time-box .count {
+    font-size: 35px;
+  }
+  .availability .info .btn-pink {
+    font-size: 15px;
+  }
+}
